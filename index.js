@@ -14,14 +14,14 @@ guessButton.addEventListener("click", function() {
   if (isNaN(guess) || guess < 1 || guess > 100) {
     resultMessage.innerHTML = "Please enter a valid number between 1 and 100.";
   } else if (guess === winningNumber) {
-    resultMessage.innerHTML = "You win!";
+    resultMessage.innerHTML =`<img src="Crusader.gif"/>`; 
     guessInput.disabled = true;
     guessButton.disabled = true;
   } else {
     remainingGuesses--;
     remainingAttempts.innerHTML = `Attempts remaining: ${remainingGuesses}`;
     if (remainingGuesses === 0) {
-      resultMessage.innerHTML = "You lose.";
+      resultMessage.innerHTML = `<img src="Dumb.gif"/>`;
       guessInput.disabled = true;
       guessButton.disabled = true;
     } else {
@@ -48,7 +48,7 @@ hintButton.addEventListener("click", function() {
   let hint1 = winningNumber - 9;
   let hint2 = winningNumber;
   let hint3 = winningNumber + 6;
-  let hint4 = winningNumber - 2;
+  let hint4 = winningNumber - 6;
   let hint5 = winningNumber + 1;
   resultMessage.innerHTML = `Hints: ${hint1}, ${hint2}, ${hint3}, ${hint4}, ${hint5}, (one of these is the winning number)`;
 });
