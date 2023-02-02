@@ -4,6 +4,7 @@ const resetButton = document.getElementById("resetButton");
 const hintButton = document.getElementById("hintButton");
 const resultMessage = document.getElementById("resultMessage");
 const remainingAttempts = document.getElementById("remainingAttempts");
+const text = document.getElementById("rainbow-text");
 
 let winningNumber = Math.floor(Math.random() * 100) + 1;
 let remainingGuesses = 5;
