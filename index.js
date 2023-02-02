@@ -45,9 +45,9 @@ resetButton.addEventListener("click", function() {
 });
 
 hintButton.addEventListener("click", function() {
-  let hint1 = Math.floor(Math.random() * 100) + 1;
-  let hint2 = Math.floor(Math.random() * 100) + 1;
-  let hint3 = Math.floor(Math.random() * 100) + 1;
+  let hint1 = winningNumber - 1;
+  let hint2 = winningNumber;
+  let hint3 = winningNumber + 1;
   resultMessage.innerHTML = `Hints: ${hint1}, ${hint2}, ${hint3} (one of these is the winning number)`;
 });
 
