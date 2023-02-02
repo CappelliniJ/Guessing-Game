@@ -45,10 +45,12 @@ resetButton.addEventListener("click", function() {
 });
 
 hintButton.addEventListener("click", function() {
-  let hint1 = winningNumber - 1;
+  let hint1 = winningNumber - 9;
   let hint2 = winningNumber;
-  let hint3 = winningNumber + 1;
-  resultMessage.innerHTML = `Hints: ${hint1}, ${hint2}, ${hint3} (one of these is the winning number)`;
+  let hint3 = winningNumber + 6;
+  let hint4 = winningNumber - 2;
+  let hint5 = winningNumber + 1;
+  resultMessage.innerHTML = `Hints: ${hint1}, ${hint2}, ${hint3}, ${hint4}, ${hint5}, (one of these is the winning number)`;
 });
 
 
